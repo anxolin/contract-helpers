@@ -23,7 +23,7 @@ contract BurnGasTest is Test {
     }
 
     function test_burnMostGas_returnsSuccessfully() public {
-        (bool ok,) = _callBurnMostGas(200_000, 5_000);
+        (bool ok,) = _callBurnMostGas(200_000, 5000);
         assertTrue(ok, "burnMostGas should not revert");
     }
 

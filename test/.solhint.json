@@ -1,6 +1,8 @@
 {
   "rules": {
     "func-name-mixedcase": "off",
-    "use-natspec": "off"
+    "use-natspec": "off",
+    "gas-small-strings": "off",
+    "avoid-low-level-calls": "off"
   }
 }

@@ -68,13 +68,15 @@ slither:
 test:
     {{ FORGE }} test -vvv --show-progress --gas-snapshot-check true
 
-# Print coverage summary
+# Print coverage summary.
+# BurnGas is excluded: its gas-burning loops never exit normally on the success path
+# (out-of-gas / infinite loop), so forge coverage cannot instrument the loop bodies.
 coverage-summary:
-    {{ FORGE }} coverage --no-match-coverage "^(test|script)/" --report summary
+    {{ FORGE }} coverage --no-match-coverage "^(test|script)/|^src/BurnGas\\.sol$" --report summary
 
 # Generate lcov coverage report
 coverage-lcov:
-    {{ FORGE }} coverage --no-match-coverage "^(test|script)/" --report lcov
+    {{ FORGE }} coverage --no-match-coverage "^(test|script)/|^src/BurnGas\\.sol$" --report lcov
 
 # Fail if the minimum of all four coverage metrics (lines/statements/branches/funcs) on the `Total` row is below `COVERAGE_MIN` (default `100`)
 coverage-check:
