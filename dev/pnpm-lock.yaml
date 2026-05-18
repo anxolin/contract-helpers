@@ -4,22 +4,27 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  brace-expansion@>=5.0.0 <5.0.6: '>=5.0.6'
+  fast-uri@<=3.1.0: '>=3.1.1'
+  fast-uri@<=3.1.1: '>=3.1.2'
+
 importers:
 
   .:
     devDependencies:
       '@foundry-rs/anvil':
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.7.1
+        version: 1.7.1
       '@foundry-rs/cast':
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.7.1
+        version: 1.7.1
       '@foundry-rs/chisel':
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.7.1
+        version: 1.7.1
       '@foundry-rs/forge':
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.7.1
+        version: 1.7.1
       solhint:
         specifier: 6.2.1
         version: 6.2.1
@@ -34,160 +39,160 @@ packages:
     resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
     engines: {node: '>=6.9.0'}
 
-  '@foundry-rs/anvil-darwin-amd64@1.7.0':
-    resolution: {integrity: sha512-nP8sfqw9nVZwPNAY71uAxFdS+pgfNjP+Inp/ZOYHi0guhMkYgtkVNQCz8UWk7lb8rnX1OaLJKx89R51rfW06xw==}
+  '@foundry-rs/anvil-darwin-amd64@1.7.1':
+    resolution: {integrity: sha512-OgwzwY+FsGrsPyDv4mmbhOwARO8s37YHrm2qaNzgSH4VlKnXgJCrnoT7bpgOhLyBPtxXjBT8L2E3b79deesXRg==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/anvil-darwin-arm64@1.7.0':
-    resolution: {integrity: sha512-2VGB1tEOHD2jtn87y+5woqn7UjWTQdMFr+jM5NFJ4hEZ33esqZwJ5MHmmgUAElMQzvnC6EzSyZCWmjkoO0QXAQ==}
+  '@foundry-rs/anvil-darwin-arm64@1.7.1':
+    resolution: {integrity: sha512-JNeu3+A3f/npXLn8SR8EahVcqE7BpO9VQZMcPvSIy27/RNc1GsoEBvSLR99aSvt8sGKWAgNg/EzrtjAPq6mxcA==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/anvil-linux-amd64@1.7.0':
-    resolution: {integrity: sha512-Oq0jkVStTN9/l7c6g4CDxtsBM4MEft9zP3+GBls/ahP+xNp9AYveCHlTAHNLgqO0mPspp1j33jTPgBZ42b51xQ==}
+  '@foundry-rs/anvil-linux-amd64@1.7.1':
+    resolution: {integrity: sha512-+XmShybEaxfCrr0OUUZwYEy2OnYZt5pHH9TzBtLv3+VrK0O/ANuNSVEahqNhKHlgX7GRJ59383ofNhxkRWIYTg==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/anvil-linux-arm64@1.7.0':
-    resolution: {integrity: sha512-BpC0ndPAdEngrRZsQEoFgQ2aU5Bz9xEJEHRSeQ8rt9scSdCrLH1Sui/SqIArTxV0effiH+lQMO5RCPvPjU33Tg==}
+  '@foundry-rs/anvil-linux-arm64@1.7.1':
+    resolution: {integrity: sha512-ykHJmFOGdBR8+9smOKBm9ZZDCCCkLQctiHOAddLvmYx9mPeBDMfq6jP51hKYsO5MG8ClPLSlWe+JpiXPjoXgBQ==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/anvil-win32-amd64@1.7.0':
-    resolution: {integrity: sha512-xY+d5/6VR6X9UBpqlfTPpv5qnpdxG+pqOTET5T0AHWCRftVa/RtM6t5LiAUASZEpO5PHueUBYG/2TPry2iOy/g==}
+  '@foundry-rs/anvil-win32-amd64@1.7.1':
+    resolution: {integrity: sha512-IeuBcmQ+AQKUxXA77czSVIfpST+KLBdXaL71JlK/h6e0DoP2CYnmVZn8WE/fuQfjAU2zaWw7PDXmq1kedbIUGA==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [win32]
     hasBin: true
 
-  '@foundry-rs/anvil@1.7.0':
-    resolution: {integrity: sha512-YgTIaNwQupty4EdIgPB5BdbA+7SwE4s/PacA5KtqmGdYAs4gOV3N7R2m+MPM6uK5FW0vqBeZCmaZeijX0Ry+Ug==}
+  '@foundry-rs/anvil@1.7.1':
+    resolution: {integrity: sha512-rcy+hu8e90DNizfh5WpbJjMiadgDBtV3JHe2M6OsdmIzoDH77Gk0sVgNxr7LnBiKpkzt6pV2XEOI7XMXmJo1Kg==}
     hasBin: true
 
-  '@foundry-rs/cast-darwin-amd64@1.7.0':
-    resolution: {integrity: sha512-EU1ZGN29eY0JVltJD9NJeDjF+FZu2RNbDOI/LH7LzEdh6SPslXz7fL0fQ+BtkOhLrrf1x3eTKcSOKtl9nZSLFA==}
+  '@foundry-rs/cast-darwin-amd64@1.7.1':
+    resolution: {integrity: sha512-K1ZV5SLcq9B6cMmtZYRB0YyIbhrhLgdMyKzjMzQmIohxkC7+gtrOUwzMMFTU5IedGgaUXBCFH5Bp5DGUkJ9qpw==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/cast-darwin-arm64@1.7.0':
-    resolution: {integrity: sha512-IkPhDOwsnoyYk3JzKqNJUrkapc3z46PS1oRaa9zPtc5PGjz0Vm1q6P/Ll2tBC7zfpoNx9VRX8qsB2u5J4TZXpQ==}
+  '@foundry-rs/cast-darwin-arm64@1.7.1':
+    resolution: {integrity: sha512-lO2aEhJfTOksC4V2Qhz6kH4RztPKd/rMsv6GJLfIWKMQ9Q/1TmMzpyGELCSUp28YwYqhC7gTlFYMkxDTuvyqiw==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/cast-linux-amd64@1.7.0':
-    resolution: {integrity: sha512-Dd/w08q68s9h+T3SmvpL0iB5EdwSRYsLm3H/bBxsbQO29ffdhfSzMsr8j5NSqOcLISdEllD3liiOTOUnwshq4w==}
+  '@foundry-rs/cast-linux-amd64@1.7.1':
+    resolution: {integrity: sha512-XUpTM2rwtkF8BJ02dae38NNZAx5QfycWRpdR2RmSgOJnasvXuvN58whDVLjQu8IDHEV/fCNIa49aE8V74pmDwQ==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/cast-linux-arm64@1.7.0':
-    resolution: {integrity: sha512-ivAWI79IZpJgBKWo/Yp+J/Sun188dA9fDJCn3ijpqVwLeA05+swWvEwOgVidU5LkBgHHC3fWfMwUP62JWg/c/Q==}
+  '@foundry-rs/cast-linux-arm64@1.7.1':
+    resolution: {integrity: sha512-LfXMECUhrpDPgOAuiLTYPeXXFpi/sABhcHAcbfvq+n5668sdjrh4FY8Ol14GcZV/QxqOrwFtsKjdyHZgtHM4pQ==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/cast-win32-amd64@1.7.0':
-    resolution: {integrity: sha512-yEd9m4ktqP6plV1b0d6jhsws7Jl39UZdYkS39aRkCq0yh2MzNBbSNYH/Rcbe5inpLsgRetQ4UXrQ0bSdYUSR1Q==}
+  '@foundry-rs/cast-win32-amd64@1.7.1':
+    resolution: {integrity: sha512-vWsLwripv+wCMyCI9PMopAmgi0WPlk7U6wcF+pCtcFjQ4/siNAfZhkrfNbcC7J9WoN2kWfQ4hckA6iMvrCGCUQ==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [win32]
     hasBin: true
 
-  '@foundry-rs/cast@1.7.0':
-    resolution: {integrity: sha512-5Sl26S50AFvC4jZ+duPp7W7emG3ZBrpTAdatUCUaKEyp6QrIv8kKTkgU/0brGqhFUnCVkyJHBh7Qz/bFIWVhhg==}
+  '@foundry-rs/cast@1.7.1':
+    resolution: {integrity: sha512-oPWdaVRwshzn5PijkVJC8Ee+fC/1zMVn9kzvr4PGEsNOen8c7u1ts1lpTvwFNpNwUgg9qLCadzmw+RygGr0BFw==}
     hasBin: true
 
-  '@foundry-rs/chisel-darwin-amd64@1.7.0':
-    resolution: {integrity: sha512-pPVq+F23wDLBmRH8Z5KNJMbUhdvYJCD0yCAD9DKXMbD2xvZNLE9c/5GuFTujWTR4enSh5NHCZfvNgrQUBUPXXw==}
+  '@foundry-rs/chisel-darwin-amd64@1.7.1':
+    resolution: {integrity: sha512-jxjFXmhE17NbFrHatbrjuFhT+AP7fnJQTuDLbIkTcitw7OM6rnRIQh9iPdXAxzOLYlSM64z1ywXsrVEbw+x5bg==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/chisel-darwin-arm64@1.7.0':
-    resolution: {integrity: sha512-tjZ1z5VOcNJjj7C9JJKPTzAqxjmL8/LSx7SfLs0tWxm/fk2Qfr3F/YOINuDiIZYDDKdie3i7CsyuklREYnwO4g==}
+  '@foundry-rs/chisel-darwin-arm64@1.7.1':
+    resolution: {integrity: sha512-jkCVtYRhhZtpwbQg+Y7okGgMuoavJLE4Hav5ZRYEctUMheVYUZssYYXgAHWHXDed0WyGZ2NwAxhaeKFfG9fFAQ==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/chisel-linux-amd64@1.7.0':
-    resolution: {integrity: sha512-JRkUzI2A5zcCutryW1QcAQTDlNTnrss/wfxgXPhE1j7XIBOV4f2hBrHJiZMuRfBO3Fqbjop/tGm5owy+tzzPuA==}
+  '@foundry-rs/chisel-linux-amd64@1.7.1':
+    resolution: {integrity: sha512-0AgTdDuxiuRsD84p4wRiymPTvBbT0jWy8gzuGOC28vAVFljRP6hAYhplflEPbraC2OVkVBp6jxjSBclnzRmVFw==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/chisel-linux-arm64@1.7.0':
-    resolution: {integrity: sha512-VQoBHo8LcBjkzfd9iEMdcycLj8JHfFmniHo5L/S+PLSPda/Vt8Jz/MYX02kzcR5wkcRnGiuP75FCEyVkvuN4ew==}
+  '@foundry-rs/chisel-linux-arm64@1.7.1':
+    resolution: {integrity: sha512-AlPgXj5hOg+XpioHjwZWw8/LV5cK8JU3mcNTF8iclPHE9wvjkdrvi59Bpluvr54wOIaxIBgUUWEv5zOhJ0CfbQ==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/chisel-win32-amd64@1.7.0':
-    resolution: {integrity: sha512-PAGswirIm5sQKBEyC4irO28QYBHeZ/1iAyeqAFEJwN9O4UhZ+bw/9CICYBUymULn8e51YrefQjXcfSLgP7VYqA==}
+  '@foundry-rs/chisel-win32-amd64@1.7.1':
+    resolution: {integrity: sha512-v2fwaOc2uOUUsmQCzzWQObVpoX+M+yr/yKAv/fM1ejm2X1qjGZOyBIr+gghcbagsUIXxCS7TwaueG4yslSktcQ==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [win32]
     hasBin: true
 
-  '@foundry-rs/chisel@1.7.0':
-    resolution: {integrity: sha512-5pd2/jVSmHzJeOBKJjNFyBfflfNUZ50fBpLy8q5so4LmSUnOqk3J8aRugC9zhFWx/j7Dnuk3hGah1EMqbxOnPQ==}
+  '@foundry-rs/chisel@1.7.1':
+    resolution: {integrity: sha512-/L0idj+m19UnaGigGkhOy+A0UjrbkSWX/OeV6qvf/FCQbJoDxkwGwMfqp2dUyht0Wx0veMnVnp7/ooMXTFZLJw==}
     hasBin: true
 
-  '@foundry-rs/forge-darwin-amd64@1.7.0':
-    resolution: {integrity: sha512-UmGQL9HILZA6KsURe6fiQgh2bgKTOp5e8CkBIc7jFRo0TVnYm2IRrcOjK3hSq8Pmm5UdIXAsH6PaIDxwgliS4A==}
+  '@foundry-rs/forge-darwin-amd64@1.7.1':
+    resolution: {integrity: sha512-0P18bZyXiCJ5YJMQ+FgOE3WToqt7qBp8eyeBWFAIHX79hwN8RWtvdBWJ6ZcYH14lWZVuN8oYi8Wkth/t3jAa8g==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/forge-darwin-arm64@1.7.0':
-    resolution: {integrity: sha512-8aiPgHeT+8qKWli6MYUJ7UZqVFX0QNOs5YDCYIqC5SHrkoNvWNxN8Uq8EhB0huL3+qw40rNdvk8pYc8lUB2mYQ==}
+  '@foundry-rs/forge-darwin-arm64@1.7.1':
+    resolution: {integrity: sha512-PwvdcKxniBoIic163Gw8t7rIOfE8ZfV2mCM2WOXnGdsUbCJRvkqCWq4qidkUORbibhfiRTyw3991hMFL8/qEfw==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [darwin]
     hasBin: true
 
-  '@foundry-rs/forge-linux-amd64@1.7.0':
-    resolution: {integrity: sha512-9sYL+9Q0fw3AYdakuCW5EsvrAS6Ss+gNYZ08AaOZvfaEB3/gAR8DfxwkNVy16Bduju6qLTK8piyWEcKZjFo+hA==}
+  '@foundry-rs/forge-linux-amd64@1.7.1':
+    resolution: {integrity: sha512-/HQddyTanVOJKgvilmZrf8VOf7mhvwrWb59W73w5W5flX7b6zNh9CR6hKZzJwiRRi5Sxk/JOFEYIeKsQx7Teqg==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/forge-linux-arm64@1.7.0':
-    resolution: {integrity: sha512-ED8eXUi4pazjvvDjuuUoVVn1eo8MxZHiEwYSITEr5FAkaUCJoWFdyUQ9+vp8M/+heIjHD47Ue6DaJ3zGKHo9fw==}
+  '@foundry-rs/forge-linux-arm64@1.7.1':
+    resolution: {integrity: sha512-jt+6H8AWHauP8kP+miMKJkMjC6UCHm6NRjO5D+5ca416o6iJGPURNs+Nlb0WWnb1gaCj7sXUZqpxH73Ub+YBWg==}
     engines: {node: '>=20'}
     cpu: [arm64]
     os: [linux]
     hasBin: true
 
-  '@foundry-rs/forge-win32-amd64@1.7.0':
-    resolution: {integrity: sha512-0t/RUpwJVr7uJpf+Csb2iGGpJEE/t3OaZje1xIMVq2/YgULyJonEp0onuw7Ri1ily3C4JPDmP3f1PI/rLdnY7A==}
+  '@foundry-rs/forge-win32-amd64@1.7.1':
+    resolution: {integrity: sha512-WK+gWWlWYpgrsrKcle4hzV5k5TPoVE8acsnNnmckQhvcbcZBG2VukpkqFCJgOpPX1xuSYtskHTIhJbCx1w854w==}
     engines: {node: '>=20'}
     cpu: [x64]
     os: [win32]
     hasBin: true
 
-  '@foundry-rs/forge@1.7.0':
-    resolution: {integrity: sha512-g+SdbELu9RmwKeIiAo9gJud8SrvOsG1IS6m5v+HJ5aNbEZDdV1ofkJvLsv+fSQd2Zl09afMERbd7I0qh1v1AHg==}
+  '@foundry-rs/forge@1.7.1':
+    resolution: {integrity: sha512-ji244KYCP15RTaHg/V3VpTarX+8Tl7qm54B8laVeabbUMKhsJI5QK28gh5fbTxndB7tdsnbliwdrx/FwAXzEoA==}
     hasBin: true
 
   '@humanwhocodes/momoa@2.0.4':
@@ -256,8 +261,8 @@ packages:
     peerDependencies:
       ajv: 4.11.8 - 8
 
-  brace-expansion@5.0.5:
-    resolution: {integrity: sha512-VZznLgtwhn+Mact9tfiwx64fA9erHH/MCXEUfB/0bX/6Fz6ny5EGTXYltMocqg4xFAQZtnO3DHWWXi8RiuN7cQ==}
+  brace-expansion@5.0.6:
+    resolution: {integrity: sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==}
     engines: {node: 18 || 20 || >=22}
 
   cacheable-lookup@7.0.0:
@@ -323,8 +328,8 @@ packages:
   fast-diff@1.3.0:
     resolution: {integrity: sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==}
 
-  fast-uri@3.1.0:
-    resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
+  fast-uri@3.1.2:
+    resolution: {integrity: sha512-rVjf7ArG3LTk+FS6Yw81V1DLuZl1bRbNrev6Tmd/9RaroeeRRJhAt7jg/6YFxbvAQXUCavSoZhPPj6oOx+5KjQ==}
 
   form-data-encoder@2.1.4:
     resolution: {integrity: sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw==}
@@ -562,97 +567,97 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.28.5': {}
 
-  '@foundry-rs/anvil-darwin-amd64@1.7.0':
+  '@foundry-rs/anvil-darwin-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/anvil-darwin-arm64@1.7.0':
+  '@foundry-rs/anvil-darwin-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/anvil-linux-amd64@1.7.0':
+  '@foundry-rs/anvil-linux-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/anvil-linux-arm64@1.7.0':
+  '@foundry-rs/anvil-linux-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/anvil-win32-amd64@1.7.0':
+  '@foundry-rs/anvil-win32-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/anvil@1.7.0':
+  '@foundry-rs/anvil@1.7.1':
     optionalDependencies:
-      '@foundry-rs/anvil-darwin-amd64': 1.7.0
-      '@foundry-rs/anvil-darwin-arm64': 1.7.0
-      '@foundry-rs/anvil-linux-amd64': 1.7.0
-      '@foundry-rs/anvil-linux-arm64': 1.7.0
-      '@foundry-rs/anvil-win32-amd64': 1.7.0
+      '@foundry-rs/anvil-darwin-amd64': 1.7.1
+      '@foundry-rs/anvil-darwin-arm64': 1.7.1
+      '@foundry-rs/anvil-linux-amd64': 1.7.1
+      '@foundry-rs/anvil-linux-arm64': 1.7.1
+      '@foundry-rs/anvil-win32-amd64': 1.7.1
 
-  '@foundry-rs/cast-darwin-amd64@1.7.0':
+  '@foundry-rs/cast-darwin-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/cast-darwin-arm64@1.7.0':
+  '@foundry-rs/cast-darwin-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/cast-linux-amd64@1.7.0':
+  '@foundry-rs/cast-linux-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/cast-linux-arm64@1.7.0':
+  '@foundry-rs/cast-linux-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/cast-win32-amd64@1.7.0':
+  '@foundry-rs/cast-win32-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/cast@1.7.0':
+  '@foundry-rs/cast@1.7.1':
     optionalDependencies:
-      '@foundry-rs/cast-darwin-amd64': 1.7.0
-      '@foundry-rs/cast-darwin-arm64': 1.7.0
-      '@foundry-rs/cast-linux-amd64': 1.7.0
-      '@foundry-rs/cast-linux-arm64': 1.7.0
-      '@foundry-rs/cast-win32-amd64': 1.7.0
+      '@foundry-rs/cast-darwin-amd64': 1.7.1
+      '@foundry-rs/cast-darwin-arm64': 1.7.1
+      '@foundry-rs/cast-linux-amd64': 1.7.1
+      '@foundry-rs/cast-linux-arm64': 1.7.1
+      '@foundry-rs/cast-win32-amd64': 1.7.1
 
-  '@foundry-rs/chisel-darwin-amd64@1.7.0':
+  '@foundry-rs/chisel-darwin-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/chisel-darwin-arm64@1.7.0':
+  '@foundry-rs/chisel-darwin-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/chisel-linux-amd64@1.7.0':
+  '@foundry-rs/chisel-linux-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/chisel-linux-arm64@1.7.0':
+  '@foundry-rs/chisel-linux-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/chisel-win32-amd64@1.7.0':
+  '@foundry-rs/chisel-win32-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/chisel@1.7.0':
+  '@foundry-rs/chisel@1.7.1':
     optionalDependencies:
-      '@foundry-rs/chisel-darwin-amd64': 1.7.0
-      '@foundry-rs/chisel-darwin-arm64': 1.7.0
-      '@foundry-rs/chisel-linux-amd64': 1.7.0
-      '@foundry-rs/chisel-linux-arm64': 1.7.0
-      '@foundry-rs/chisel-win32-amd64': 1.7.0
+      '@foundry-rs/chisel-darwin-amd64': 1.7.1
+      '@foundry-rs/chisel-darwin-arm64': 1.7.1
+      '@foundry-rs/chisel-linux-amd64': 1.7.1
+      '@foundry-rs/chisel-linux-arm64': 1.7.1
+      '@foundry-rs/chisel-win32-amd64': 1.7.1
 
-  '@foundry-rs/forge-darwin-amd64@1.7.0':
+  '@foundry-rs/forge-darwin-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/forge-darwin-arm64@1.7.0':
+  '@foundry-rs/forge-darwin-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/forge-linux-amd64@1.7.0':
+  '@foundry-rs/forge-linux-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/forge-linux-arm64@1.7.0':
+  '@foundry-rs/forge-linux-arm64@1.7.1':
     optional: true
 
-  '@foundry-rs/forge-win32-amd64@1.7.0':
+  '@foundry-rs/forge-win32-amd64@1.7.1':
     optional: true
 
-  '@foundry-rs/forge@1.7.0':
+  '@foundry-rs/forge@1.7.1':
     optionalDependencies:
-      '@foundry-rs/forge-darwin-amd64': 1.7.0
-      '@foundry-rs/forge-darwin-arm64': 1.7.0
-      '@foundry-rs/forge-linux-amd64': 1.7.0
-      '@foundry-rs/forge-linux-arm64': 1.7.0
-      '@foundry-rs/forge-win32-amd64': 1.7.0
+      '@foundry-rs/forge-darwin-amd64': 1.7.1
+      '@foundry-rs/forge-darwin-arm64': 1.7.1
+      '@foundry-rs/forge-linux-amd64': 1.7.1
+      '@foundry-rs/forge-linux-arm64': 1.7.1
+      '@foundry-rs/forge-win32-amd64': 1.7.1
 
   '@humanwhocodes/momoa@2.0.4': {}
 
@@ -685,7 +690,7 @@ snapshots:
   ajv@8.20.0:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 3.1.0
+      fast-uri: 3.1.2
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
@@ -712,7 +717,7 @@ snapshots:
       jsonpointer: 5.0.1
       leven: 3.1.0
 
-  brace-expansion@5.0.5:
+  brace-expansion@5.0.6:
     dependencies:
       balanced-match: 4.0.4
 
@@ -773,7 +778,7 @@ snapshots:
 
   fast-diff@1.3.0: {}
 
-  fast-uri@3.1.0: {}
+  fast-uri@3.1.2: {}
 
   form-data-encoder@2.1.4: {}
 
@@ -863,7 +868,7 @@ snapshots:
 
   minimatch@10.2.5:
     dependencies:
-      brace-expansion: 5.0.5
+      brace-expansion: 5.0.6
 
   minimist@1.2.8: {}
 
