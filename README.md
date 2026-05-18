@@ -26,7 +26,7 @@ run `just help` to see the available commands.
 
 ```shell
 # Install dependencies
-pnpm --dir dev install
+just install
 
 # Build
 just build
