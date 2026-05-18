@@ -76,7 +76,7 @@ coverage-summary:
 
 # Generate lcov coverage report
 coverage-lcov:
-    {{ FORGE }} coverage --no-match-coverage "^(test|script)/|^src/BurnGas\\.sol$" --report lcov
+    {{ FORGE }} coverage --no-match-coverage "^(test|script)/" --report lcov
 
 # Fail if the minimum of all four coverage metrics (lines/statements/branches/funcs) on the `Total` row is below `COVERAGE_MIN` (default `100`)
 coverage-check:
