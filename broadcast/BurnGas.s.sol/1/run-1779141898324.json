@@ -1,0 +1,30 @@
+{
+  "transactions": [
+    {
+      "hash": null,
+      "transactionType": "CREATE",
+      "contractName": "BurnGas",
+      "contractAddress": "0x5b73c5498c1e3b4dba84de0f1833c4a029d90519",
+      "function": null,
+      "arguments": null,
+      "transaction": {
+        "from": "0x1804c8ab1f12e6bbf3894d4083f33e07309d1f38",
+        "to": null,
+        "gas": "0x21b30",
+        "value": "0x0",
+        "input": "0x6080604052348015600e575f5ffd5b5060f48061001b5f395ff3fe6080604052348015600e575f5ffd5b50600436106030575f3560e01c8063a0de880e146034578063be95b22014603c575b5f5ffd5b603a6054565b005b60526004803603810190604e91906098565b605c565b005b5b6001605557565b5b805a11605d5750565b5f5ffd5b5f819050919050565b607a81606a565b81146083575f5ffd5b50565b5f813590506092816073565b92915050565b5f6020828403121560aa5760a96066565b5b5f60b5848285016086565b9150509291505056fea26469706673582212204119672f01fa4d1e8369304f78004565757d78b782c31f76380509d3eae109cb64736f6c63430008220033",
+        "nonce": "0x0",
+        "chainId": "0x1"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [],
+  "returns": {},
+  "timestamp": 1779141898324,
+  "chain": 1,
+  "commit": "56785dd"
+}
