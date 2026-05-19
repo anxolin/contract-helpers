@@ -1,0 +1,23 @@
+{
+  "name": "mock-hook-gas",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "quote": "tsx src/quote.ts",
+    "quote:compare": "tsx src/quote-compare.ts",
+    "buy-cow": "tsx src/buy-cow.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cowprotocol/cow-sdk": "^9.1.0",
+    "@cowprotocol/sdk-viem-adapter": "^0.3.18",
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
